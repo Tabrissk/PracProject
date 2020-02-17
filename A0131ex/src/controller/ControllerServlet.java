@@ -19,6 +19,7 @@ public class ControllerServlet extends HttpServlet{
 		String command = request.getParameter("command");  //처음에 index에서 출발하는데 sang.do?command=sangpum 으로 href링크가 됨
 		CommandInter inter = null;
 		String viewName = "";
+		String boardview = "boardview/";
 		request.setCharacterEncoding("utf-8");
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		try {
@@ -66,7 +67,19 @@ public class ControllerServlet extends HttpServlet{
 				request.getRequestDispatcher(viewName).forward(request, response);
 
 			}
-///////////////////////////////////////////////////////			
+///////////////////////////////////////////////////////		
+			
+			else if(command.equals("sawonlist")){
+				inter = SawonList.instance(); 
+
+				viewName = inter.showData(request, response);
+				
+				boardview = boardview + viewName ;
+
+				System.out.println("리턴된 처음 jsp는 "+ viewName+ "최종 폴더는"+boardview);
+			  request.getRequestDispatcher(boardview).forward(request, response);
+
+			} 
 			
 		} catch (Exception e) {
 			System.out.println("service err : " + e);

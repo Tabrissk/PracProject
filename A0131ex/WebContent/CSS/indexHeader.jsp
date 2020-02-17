@@ -38,5 +38,6 @@ else {  %> 	<ul>
   <li> <a href="list_all_item.jsp"> 전체 제품 목록 </a> </li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
   <li> <a href="list_brand.jsp"> 브랜드 보기 </a> </li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
       <li> <a href="sang.do?command=sangpum">  mybatis 자유게시판  </a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <li> <a href="sang.do?command=sawonlist">  mybatis 게시판2  </a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
   <li> <a href="memberupdatepage.jsp">  미작업 마이페이지  </a></li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
   </nav>

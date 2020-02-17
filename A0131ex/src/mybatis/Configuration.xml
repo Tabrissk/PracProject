@@ -4,6 +4,7 @@
 <configuration>
 	<typeAliases>
 		<typeAlias type="DTO.SangpumDto" alias="SangpumDto"/>
+		<typeAlias type="DTO.SawonDto" alias="SawonDto"/>
 	</typeAliases>
 
 
