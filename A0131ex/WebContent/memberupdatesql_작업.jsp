@@ -8,7 +8,7 @@
 <% request.setCharacterEncoding("UTF-8"); %>
 <%
 
-String idcheckfromsession = (String)request.getAttribute("idcheck");
+String idcheckfromsession = (String)session.getAttribute("idcheck");
 
 String nationalch = request.getParameter("nationalch");
 if(nationalch.equalsIgnoreCase("Citizen")){

@@ -63,21 +63,8 @@ ArrayList<DTOdata> takevalues = testob.addputting();
 	</div>
 	</jsp:useBean>
 <%--style="text-align: center;" --%>>
-<div class="text-center" style="position:relative; top: 100px; left: 30px;">
+<div class="text-center" style="position:relative; top: 100px;">
 <input type="button"  value="qna 작성하기" onClick="qnawrite()" class="btn btn-primary"> 	</div>
-
-<div style="position:relative; left: 200px; top: 20px;">
-<FORM name='searchform' method='Post' action='qnoticeboard_aftersearch.jsp'>
-      <SELECT name='col'> <!-- 검색 컬럼 -->
-        <OPTION value='rname'>이름</OPTION>
-        <OPTION value='title'>제목</OPTION>
-        <OPTION value='content'>내용</OPTION>
-        <OPTION value='title_content'>제목+내용</OPTION>
-      </SELECT>
-      <input type='text' name='word' value='' placeholder="특수문자는 사용할수 없습니다.">
-      <button type='submit'>검색</button> 
-  </FORM>
-  </div> 
 			 
    <%@ include file="./CSS/indexFooter_absolute.jsp"%>
   

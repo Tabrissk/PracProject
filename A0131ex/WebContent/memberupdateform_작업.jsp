@@ -81,6 +81,8 @@
  <table cellpadding="3" cellspacing="1" align="center" style="width:1300px;  position:relative; left:50px;">
  <form name="memtable" ACTION="memberupdatesql.jsp" METHOD=POST>
 
+<tr><td class=namecolor>아이디 :(수정불가)</td> <td class=namecolor><%=(String)session.getAttribute("idcheck")%></td> </tr>
+<tr><td class=namecolor>이름 :(수정불가)</td> <td class=namecolor><%=(String)session.getAttribute("nameck")%></td> </tr>
   <tr>
    <td class=namecolor>국적 :</td> <td class=tdstyle>
   국적 <input type = "radio" name="nationalch" value="Citizen" checked>내국인

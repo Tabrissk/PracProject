@@ -125,7 +125,10 @@ public ArrayList<DTOdata> boardclicking(int numinput) {
 
 			String comd = "insert into noticebrddb(titleck,qnoticesaying,qnoticewriter,qnoticedate) values('" + dtobean.getTitleck()
 					+ "','" + dtobean.getQnoticesaying() + "','" + dtobean.getQnoticewriter() + "',now());";
-
+ // now()대신 sysdate()도 있다
+//			그 긴 쿼리( 쿼리 단위 )가 실행 될 때를 기준으로 날짜와 시간을 맞추고 싶다면 NOW를 사용하고,
+//			중간중간 날짜를 조회할 때를 기준으로 각각 날짜와 시간을 사용하고 싶다면 SYSDATE를 사용합니다.
+//			즉, SYSDATE() 함수는 함수가 실행되는 시점의 시각을 반환하지만, NOW()는 하나의 쿼리 단위로 동일한 값을 반환합니다.
 			int rowNum = state.executeUpdate(comd); // sql에서 Query ok, 1 row affected나 나오니 1값이 나와서 int로 return한다고 표시되는거다
 
 			state.close();

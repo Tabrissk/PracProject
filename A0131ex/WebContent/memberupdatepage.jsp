@@ -28,9 +28,10 @@
 
    <div style="position:relative; left: 200px; top: 20px; width:70%; margin-right:0;" > 
   <h2> mypage 회원정보 수정 버튼 </h2>
- <input type="button"  value="공지글 삭제하기" onClick="memberupdatef()" class="btn btn-primary"> 
+			<input type="button" value="회원 수정하기" onClick="memberupdatef()"
+				class="btn btn-primary">
 
-	</div>
+		</div>
 
 </section>
 

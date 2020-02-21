@@ -24,7 +24,6 @@ ResultSet rs = stmt.executeQuery("select * from memberdb where idcheck = '"+ idl
 
 if(rs.next()){
   String nameck = rs.getString("nameck");
-
 //request.setAttribute("idcheck",idlogtry);
 //request.setAttribute("passwd",passwdlogtry);
 //request.setAttribute("nameck",nameck);
@@ -33,7 +32,7 @@ session.setAttribute("passwd",passwdlogtry);
 session.setAttribute("nameck",nameck);
 session.setAttribute("loginstatus","ok");
 //request.setAttribute("logincheck","ok"); //이러니 getParameter 할때만 받고 session일때는 안받아서 session 값이 없이  
-logincheck = "ok";
+// logincheck = "ok";
  }
 
  else{
