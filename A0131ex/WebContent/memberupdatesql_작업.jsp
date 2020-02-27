@@ -6,6 +6,7 @@
  </head>
  <body>
 <% request.setCharacterEncoding("UTF-8"); %>
+<%--include header에서 는  String idcheck = (String)session.getAttribute("idcheck"); 있는데 여기서는 안했으니 따로 쓰는게 맞다 --%>
 <%
 
 String idcheckfromsession = (String)session.getAttribute("idcheck");

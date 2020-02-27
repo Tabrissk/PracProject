@@ -20,7 +20,7 @@
 
  </head>
  <body>
- <jsp:include page="./CSS/indexHeader.jsp"></jsp:include>
+ <%@ include file="./CSS/indexHeader.jsp" %>
 
      <%-- header에 이미 있음  String idcheck = (String)session.getAttribute("idcheck");
      String nameck = (String)session.getAttribute("nameck"); --%>
@@ -35,7 +35,7 @@
 
 </section>
 
-<jsp:include page="./CSS/indexFooter_absolute.jsp"></jsp:include>
+<%@ include file="./CSS/indexFooter_absolute.jsp"%>
 
  </body>
 </html>

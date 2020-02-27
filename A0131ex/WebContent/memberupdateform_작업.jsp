@@ -6,7 +6,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="./CSS/projcss.css">
       <script src="./JavaScript/Member_javascript.js"></script>
-      
+      <%-- header에 
+      String loginstatus = (String)session.getAttribute("loginstatus"); 
+      String idcheck = (String)session.getAttribute("idcheck");
+     String nameck = (String)session.getAttribute("nameck");
+     가 있다
+       --%>
   <script type="text/javascript"> 
   function totalupdatecheck()  {
 	//국적이 뭔지. 공백으로 두지 않았는지를 for안의 if뒤에 else로 두고 alert을 설정
